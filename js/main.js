@@ -52,19 +52,20 @@ console.log('numero computer: ', computer);
 // se il punteggio del giocatore > computer
 if( giocatore > computer) {
     console.log('Giocatore: Congratulazioni, sei tu il vincitore!');
-} else {
+} else if ( giocatore < computer ) {
     console.log('Giocatore: Mi dispiace, hai perso questa partita!');
+}  else {
+    console.log('Giocatore: Situazione di parità! Si rilancia!')
 }
 
 //se il punteggio del computer > giocatore
 if( computer > giocatore) {
     console.log('Computer: Congratulazioni, sei tu il vincitore!');
-} else {
+} else if ( computer < giocatore ) {
     console.log('Computer: Mi dispiace, hai perso questa partita!');
+}  else {
+    console.log('Computer: Situazione di parità! Si rilancia!')
 }
 
-//situazione di parità
-if( giocatore == computer ) {
-    console.log('Situazione di parità! si rilancia!')
-}
+
 
